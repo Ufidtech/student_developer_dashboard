@@ -1,0 +1,134 @@
+  
+
+    /* Step 1: Style the body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+    }
+
+    /* Step 2: Style the nav bar */
+    nav {
+      background: #032D60;
+      color: white;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .live-badge {
+      background: #0078D4;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Step 3: Style the profile card */
+    .container {
+      max-width: 860px;
+      margin: 32px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 24px;
+    }
+
+    .profile-card {
+      background: white;
+      border-left: 5px solid #0078D4;
+      border-radius: 10px;
+      padding: 28px 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+
+    .profile-card h2 {
+      font-size: 24px;
+      color: #032D60;
+      margin-bottom: 4px;
+    }
+
+    .profile-card .role {
+      color: #0078D4;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .profile-card p {
+      color: #4a5568;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Step 4: Style the skills section */
+    .skills-section,
+    .progress-section {
+      background: white;
+      border-radius: 10px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+
+    .skills-section h3,
+    .progress-section h3 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #718096;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills-grid span {
+      background: #EBF4FF;
+      color: #032D60;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+
+    /* Step 5: Style the progress bars */
+    .progress-item {
+      margin-bottom: 18px;
+    }
+
+    .progress-item p {
+      font-size: 13px;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .progress-bar {
+      background: #e2e8f0;
+      border-radius: 6px;
+      height: 10px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #0078D4, #00a4ef);
+      transition: width 1s ease;
+    }
